@@ -1,0 +1,55 @@
+{
+  "name": "trial-one",
+  "version": "0.1.0",
+  "private": false,
+  "dependencies": {
+    "jquery": "~3.3.1",
+    "react": "~16.5.0",
+    "react-dom": "~16.5.0",
+    "react-scripts": "~1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=3"
+  },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
+  },
+  "proxy": "http://localhost:8080/",
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.56",
+    "@babel/plugin-proposal-class-properties": "7.0.0",
+    "@babel/plugin-proposal-decorators": "7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "7.0.0",
+    "@babel/plugin-proposal-function-sent": "7.0.0",
+    "@babel/plugin-proposal-json-strings": "7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "7.0.0",
+    "@babel/plugin-syntax-import-meta": "7.0.0",
+    "@babel/plugin-transform-runtime": "7.0.0",
+    "@babel/polyfill": "7.0.0",
+    "@babel/preset-env": "7.0.0",
+    "@babel/preset-react": "7.0.0",
+    "@babel/register": "7.0.0",
+    "@babel/runtime": "7.0.0",
+    "babel-core": "7.0.0-beta.3",
+    "babel-loader": "8.0.2",
+    "cross-env": "5.2.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "jest": "^23.5.0",
+    "react-test-renderer": "^16.5.0",
+    "identity-obj-proxy": "3.0.0",
+    "jest-enzyme": "6.0.4"
+  },
+  "jest": {
+    "preset": "react"
+  }
+}
