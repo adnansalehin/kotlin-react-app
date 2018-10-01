@@ -21,7 +21,7 @@ class KotlinReactAppApplicationTests {
 	fun `retrieve data from euclid database`() {
 		println("oooooooooooooooo======")
 		euclidService.initiateDB()
-		println(euclidService.getRentals())
+		println(euclidService.getFlat("Fl-101A"))
 	}
 
 }

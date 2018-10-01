@@ -2,7 +2,9 @@ import React, { Component, Children } from 'react';
 import $ from 'jquery';
 import './App.css';
 import Header from './components/Header';
-
+import SignUpForm from './components/SignUpForm';
+import Router from "./Router";
+import { Route, Link, Switch, Redirect } from 'react-router-dom';
 
 class App extends Component {
   state = {
@@ -45,16 +47,29 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-      
+    	<div className="App">
         <Header 
         pageHeader={this.state.pageHeader}
         updater={this.updateText}
-        ></Header>
+        />
         <p className="App-intro">
-        children: {Children.count(this.props.children)}
           To get started, edit <code>src/App.js</code> and save to reload.
+		  <ul>
+	          <li><Link to="/">Home</Link></li>
+	          <li><Link to="/signUp">SignUp</Link></li>
+	          <li><Link to="/head">Head</Link></li>
+            </ul>
         </p>
+		{/*<Router/>*/}
+        <SignUpForm/>
+		    <div>
+			    <Switch>
+				    <Route exact path='/' component={SignUpForm} />
+				    <Route path='signUp' component={SignUpForm} />
+				    <Route path='head' component={Header} />
+				    <Redirect to="/" />
+			    </Switch>
+		    </div>
       </div>
     );
   }
